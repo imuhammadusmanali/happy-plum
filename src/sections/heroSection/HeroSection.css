@@ -1,0 +1,29 @@
+.hero-section {
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    padding: 100px 20px;
+    color: white;
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  
+  .hero-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-buttons button:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .hero-buttons button:last-of-type {
+    background-color: #555;
+    color: white;
+  }

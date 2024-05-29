@@ -1,0 +1,28 @@
+.meet-the-team {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  .team-member h3 {
+    margin-bottom: 10px;
+  }
+  
+  .team-member a {
+    color: #0073b1;
+  }
+  

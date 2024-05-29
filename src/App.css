@@ -1,0 +1,47 @@
+App.css
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 50px 20px;
+    }
+  
+    .hero-buttons button {
+      margin: 5px 0;
+      width: 80%;
+    }
+  
+    .team-grid {
+      flex-direction: column;
+    }
+  
+    .team-member {
+      width: 80%;
+    }
+  
+    .testimonials {
+      flex-direction: column;
+    }
+  
+    .testimonial {
+      width: 80%;
+    }
+  }
+  

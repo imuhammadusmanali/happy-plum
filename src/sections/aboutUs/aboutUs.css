@@ -1,10 +1,75 @@
+/* aboutUs.css */
 .about-us {
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-us h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.about-us p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  animation: fadeIn 2s ease-out;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.card p,
+.card ul {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .about-us h2 {
-    margin-bottom: 20px;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

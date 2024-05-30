@@ -1,0 +1,103 @@
+/* src/components/Navbar.css */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 32px 48px;
+  background: transparent;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 12px 48px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.scrolled .navbar-menu a {
+  color: #fff;
+}
+
+.navbar-menu a:hover {
+  color: #e879f9;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 28px;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 100;
+  }
+
+  .navbar-menu.open {
+    max-height: 100%;
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .navbar a {
+    font-size: 1em;
+  }
+
+  .hamburger {
+    display: grid;
+    z-index: 1000;
+  }
+
+  .navbar-logo {
+    z-index: 1000;
+  }
+}

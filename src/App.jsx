@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import HeroSection from './sections/heroSection/heroSection';
-import MeetTheTeam from './sections/meetTheTeam/meetTheTeam';
-import CustomerTestimonials from './sections/testimonials/CustomerTestimonials';
-import ContactUs from './sections/contactUs/ContactUs';
-import AboutUs from './sections/aboutUs/aboutUs';
+
+import HeroSection from './components/heroSection/HeroSection';
+import MeetTheTeam from './components/meetTheTeam/MeetTheTeam';
+import CustomerTestimonials from './components/testimonials/CustomerTestimonials';
+import ContactUs from './components/contactUs/ContactUs';
+import AboutUs from './components/aboutUs/AboutUs';
 
 function App() {
   return (
@@ -19,11 +20,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-

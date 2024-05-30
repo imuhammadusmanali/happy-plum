@@ -1,4 +1,4 @@
-/* aboutUs.css */
+/* aboutUs.css
 .about-us {
   padding: 50px 20px;
   background-color: #f4f4f4;
@@ -53,16 +53,17 @@
 
 .card ul {
   padding-left: 20px;
-}
-
+} */
+/* 
 @media (max-width: 768px) {
   .cards-container {
     flex-direction: column;
     align-items: center;
   }
-}
+} */
 
 /* Animation keyframes */
+/* 
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -71,5 +72,59 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+} */
+
+/* src/components/AboutUs.css */
+.about-us-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Ensure items align to the top */
+  padding: 70px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-us-content {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.about-us-title {
+  font-size: 2em; /* Adjust the font size as needed */
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Add some space between the title and the paragraph */
+}
+
+.about-us-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column;
+    align-items: center; /* Center align items for smaller screens */
+  }
+
+  .about-us-content,
+  .about-us-image {
+    padding: 10px;
+  }
+
+  .about-us-title {
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
   }
 }

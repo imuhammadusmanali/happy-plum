@@ -1,78 +1,7 @@
-// // src/components/Navbar.js
-// import React, { useEffect, useState } from 'react';
-// import './Navbar.css';
-// import Logo from '../../assets/img/logo.png';
-// import { IoMenu, IoClose } from 'react-icons/io5';
-
-// const Navbar = () => {
-//   const [scrolled, setScrolled] = useState(false);
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const offset = window.scrollY;
-//       if (offset > 50) {
-//         setScrolled(true);
-//       } else {
-//         setScrolled(false);
-//       }
-//     };
-
-//     window.addEventListener('scroll', handleScroll);
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
-
-//   const toggleMenu = () => {
-//     setMenuOpen(!menuOpen);
-//   };
-
-//   return (
-//     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-//       <img src={Logo} alt="Logo" className="navbar-logo" />
-//       <div className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
-//         <ul className="text-sm">
-//           <li>
-//             <a href="#hero">Home</a>
-//           </li>
-//           <li>
-//             <a href="#about-us">About Us</a>
-//           </li>
-//           <li>
-//             <a href="#team">Meet the Team</a>
-//           </li>
-//           <li>
-//             <a href="#testimonials">Testimonials</a>
-//           </li>
-//           <li>
-//             <a href="#contact">Contact Us</a>
-//           </li>
-//         </ul>
-//       </div>
-//       <div
-//         className={`hamburger w-9 h-9 place-content-center ${
-//           menuOpen ? 'open' : ''
-//         }`}
-//         onClick={toggleMenu}
-//       >
-//         {menuOpen ? (
-//           <IoClose className=" w-6 h-6" />
-//         ) : (
-//           <IoMenu className=" w-6 h-6" />
-//         )}
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-// src/components/Navbar.js
-import React, { useEffect, useState } from 'react';
-import './Navbar.css';
-import Logo from '../../assets/img/logo.png';
-import { IoMenu, IoClose } from 'react-icons/io5';
+import React, { useEffect, useState } from "react";
+import "./Navbar.css";
+import Logo from "../../assets/img/logo.png";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -90,18 +19,18 @@ const Navbar = () => {
 
     const handleBodyScroll = () => {
       if (menuOpen) {
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = "hidden";
       } else {
-        document.body.style.overflow = 'auto';
+        document.body.style.overflow = "auto";
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    handleBodyScroll(); // Ensure the initial state is set correctly
+    window.addEventListener("scroll", handleScroll);
+    handleBodyScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      document.body.style.overflow = 'auto'; // Reset scroll when unmounting
+      window.removeEventListener("scroll", handleScroll);
+      document.body.style.overflow = "auto";
     };
   }, [menuOpen]);
 
@@ -110,9 +39,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <img src={Logo} alt="Logo" className="navbar-logo" />
-      <div className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
+      <div className={`navbar-menu ${menuOpen ? "open" : ""}`}>
         <ul className="text-sm">
           <li>
             <a href="#hero" onClick={() => setMenuOpen(false)}>
@@ -143,7 +72,7 @@ const Navbar = () => {
       </div>
       <div
         className={`hamburger w-9 h-9 place-content-center ${
-          menuOpen ? 'open' : ''
+          menuOpen ? "open" : ""
         }`}
         onClick={toggleMenu}
       >

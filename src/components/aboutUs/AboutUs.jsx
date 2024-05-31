@@ -26,35 +26,6 @@ const AboutUs = () => {
         </div>
       </div>
     </div>
-
-    // <div className="cards-container">
-    //   <div className="card fade-in">
-    //     <h3>Our Mission</h3>
-    //     <p>
-    //       Revolutionize education through technology, enabling personalized
-    //       and engaging learning experiences for students of all ages.
-    //     </p>
-    //   </div>
-
-    //   <div className="card fade-in">
-    //     <h3>Key Features</h3>
-    //     <ul>
-    //       <li>Comprehensive Language Curriculum</li>
-    //       <li>Gamification and Gen AI Integration</li>
-    //       <li>APP-based Learning Component</li>
-    //       <li>Data-Driven Insights</li>
-    //       <li>Montessori Approach</li>
-    //     </ul>
-    //   </div>
-
-    //   <div className="card fade-in">
-    //     <h3>Our Vision</h3>
-    //     <p>
-    //       To prepare students for global success by making language learning
-    //       accessible, enjoyable, and effective through innovative technology.
-    //     </p>
-    //   </div>
-    // </div>
   );
 };
 
